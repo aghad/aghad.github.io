@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ html {
+     scroll-behavior: smooth;
+ }
+ body {
+     font-family: 'Roboto';
+ }
+ .page {
+     height: 100vh;
+ }
+ .home {
+     background-image: url('something.jpg');
+     background-position: center;
+     background-size: cover;
+ }
+ 
+ .overlay{
+     height: 100vh;
+     background-color: rgba(0,0,0,0.19)
+ }
+ 
+ .nav-bar {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 1.2rem;
+     width: 90%;
+     margin: auto;
+     position: fixed;
+     left: 5%;
+     transform: translateX(-50);
+ }
+ 
+.menu {
+    display: flex;
+}
+ul {
+    list-style: none;
+}
+li {
+    margin-right: 15px;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.links:hover {
+    color:teal;
+}
+
+.nav-logo{
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.main-image{
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+h1 {
+    font-size: 45px;
+    color: teal; 
+}
+.avatar{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
+.about {
+    background-image: url('something.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.about-container, .services-container, .portfolio-container{
+    top:50%;
+    left:50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+}
+
+.about-img{
+    height: 500px;
+    width: 500px;
+}
+
+.about-content{
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 65%;
+    margin: auto;
+    line-height: 1.4;
+}
+
+.about-content h2,p {
+    margin-bottom: 20px;
+}
+
+.services{
+    background-image: url('newImage.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.services-header, .portfolio-container{
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+h5{
+    color: teal;
+}
+
+.services-content, .portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width:80%;
+    margin: auto;
+    gap: 20px;
+    text-align:center;
+    line-height: 1.4;
+}
+
+h3{
+    text-transform: uppercase;
+}
+
+i {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.portfolio{
+    background-image: url('newImage.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.portfolio-content img{
+    height: 300px;
+    width: 450px;
+    filter: grayscale(1)
+}
