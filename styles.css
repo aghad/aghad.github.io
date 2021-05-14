@@ -73,7 +73,7 @@ h1 {
 .avatar{
     height: 350px;
     width: 420px;
-    border-radius: 50%;
+    border-radius: 40%;
 }
 .about {
     background-image: url('something.jpg');
