@@ -24,7 +24,7 @@
  }
 
  .overlay2{
-    height: 110vh;
+    height: 100vh;
     background-color: rgb(255, 255, 255)
  }
  
@@ -32,26 +32,36 @@
      display: flex;
      align-items: center;
      justify-content: space-between;
-     padding: 1.2rem;
-     width: 90%;
+     padding: 1.5rem;
+     width: 100%;
      margin: auto;
      position: fixed;
-     left: 5%;
-     transform: translateX(-50);
+     background-color:rgb(255, 255, 255);
+     z-index: 100;
+     border-bottom:solid 2px #eee;
+     transition: all ease-in-out 1.2s;
+     transform: translateY(-100%)
  }
  
+ .nav-bar.active {
+    transform: translateY(0);
+}
+
+
 .menu {
     display: flex;
 }
 ul {
     list-style: none;
 }
+
 li {
     margin-right: 15px;
 }
 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
+    font-size: 21px;
 }
 
 
@@ -71,14 +81,89 @@ a {
     position: absolute;
     transform: translate(-50%, -50%);
 }
+
 h1 {
-    font-size: 45px;
+    font-size: 55px;
     color: teal; 
 }
+
+@keyframes typewriter {
+    0%, 100% {
+      width: 0;
+    }
+    20%, 80% {
+      width: 6.5em;
+    }
+  }
+  
+  @keyframes typewriter2 {
+    0%, 100% {
+      width: 0;
+    }
+    20%, 80% {
+      width: 9.6em;
+    }
+  }
+
+  @keyframes caret {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+
+  /*Credit to Valentyn Vasylenko */ 
+  .text_1 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter;
+    display: inline-block;
+    position: relative;
+    animation-duration: 10s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+  }
+  
+  
+  .text_1::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  }
+
+  .text_2 {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter2;
+    display: inline-block;
+    position: relative;
+    animation-duration: 7s;
+    animation-timing-function: steps(25, end);
+    animation-iteration-count: infinite;
+  }
+  
+  
+  .text_2::after {
+    content: "|";
+    position: absolute;
+    right: 0;
+    animation: caret infinite;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, end);
+  }
+
+
+
 .avatar{
     height: 350px;
     width: 420px;
-    border-radius: 40%;
+    border-radius: 45%;
+    filter: drop-shadow(0 0 0.75rem rgb(141, 141, 141));
 }
 .about {
     background-image: url('something.jpg');
@@ -96,7 +181,8 @@ h1 {
 .about-img{
     height: 450px;
     width: 400px;
-    border-radius: 45%;
+    border-radius: 60%;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 60));
 }
 
 .about-content{
@@ -153,24 +239,31 @@ i {
 }
 
 .portfolio-content img{
-    height: 800px;
+    height: 920px;
     width: 480px;
 }
 
     footer {
         position: relative;
-        height: 90px;
+        height: 100px;
         width: 100%;
         background-color: #dfdfdf;
     }
 
+    p.contact{
+        position: top;
+        text-align: left;
+        bottom: 60px;
+    }
+
+    
 
     p.copyright {
         position: absolute;
         width: 100%;
         color: rgb(0, 0, 0);
         line-height: 50px;
-        font-size: 1.5em;
+        font-size: 1.6em;
         text-align: center;
-        bottom:20px;
+        bottom:10px;
     }
