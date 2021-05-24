@@ -1,4 +1,4 @@
 # my-personal-website
  
-I've hidden an easter egg here! Goodluck trying to find it!
+I've hidden an easter egg on my website! Goodluck trying to find it!
 Website: aghad.github.io
