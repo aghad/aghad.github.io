@@ -19,7 +19,7 @@
  }
  
  .overlay{
-     height: 100vh;
+    height: 100vh;
      background-color: rgba(248, 245, 238, 0.89)
  }
 
@@ -230,6 +230,11 @@ i {
     margin-bottom: 15px;
 }
 
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .portfolio{
     background-image: url('newImage.jpg');
     background-position: center;
@@ -248,8 +253,12 @@ i {
 
 
 .portfolio-content img{
-    height: 400px;
-    width: 550px;
+    height: 350px;
+    width: 350px;
+}
+
+.portfolio-content {
+    display: flex;
 }
 
 
